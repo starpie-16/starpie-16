@@ -1,9 +1,8 @@
 # Hi there, I'm Oliver (starpie-16) 👋
 
-### 🚀 Aspiring Machine Learning Engineer | High School Student (Grade 11)
+### 🚀 Aspiring Machine Learning Engineer | High School Student
 
-I am a passionate high school student from Vietnam, dedicated to mastering the mathematical foundations of Artificial Intelligence. My current goal is to pursue a degree in Computer Science/AI at a **Group of Eight (Go8)** university in Australia.
-
+I am a passionate high school student from Vietnam, dedicated to mastering the mathematical foundations of Artificial Intelligence. My current goal is to pursue a degree in Computer Science/AI
 ---
 
 ### 📚 My Current Learning Path (Daily Commits)
@@ -21,14 +20,18 @@ I am a passionate high school student from Vietnam, dedicated to mastering the m
 ---
 
 ### 📊 My GitHub Stats
-![Oliver's GitHub stats](https://github-readme-stats.vercel.app/api?username=starpie-16&show_icons=true&theme=radical)
+![General Stats](https://github-readme-stats.vercel.app)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=starpie-16&layout=compact&theme=radical)
+### 💻 Top Languages
+![Top Langs](https://github-readme-stats.vercel.app)
+
+### 📈 Activity Graph
+![Activity Graph](https://github-readme-activity-graph.vercel.app)
+
 
 ---
 
 ### 📫 Connect with me
-- 🎯 **Goal:** Achieve a 9.0+ GPA in Mathematics and a 7.5+ IELTS for Go8 admission.
-- 🌱 I’m currently looking for mentorship or projects related to AI in Education.
+- Email: n.hoangstarpie@gmail.com
+- I’m currently looking for mentorship or projects related to AI in Education.
 
-*"The best way to predict the future is to invent it."*
