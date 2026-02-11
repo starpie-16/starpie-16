@@ -31,6 +31,21 @@ I am a passionate high school student from Vietnam, dedicated to mastering the m
 
 ---
 
+
+## 📊 Datasets
+
+This project uses the following datasets for testing and demonstration:
+
+| Dataset | Source | Description | Path |
+| :--- | :--- | :--- | :--- |
+| **Titanic** | [Kaggle](https://www.kaggle.com/c/titanic) | Binary classification for survival prediction. | `data/raw/titanic.csv` |
+
+> **Note:** All raw datasets are stored in `data/raw/`. The processed versions after running the `toolbox` will be saved in `data/processed/`.
+
+
+---
+
+
 ### 📫 Connect with me
 - Email: n.hoangstarpie@gmail.com
 - I’m currently looking for mentorship or projects related to AI in Education.
