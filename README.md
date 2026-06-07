@@ -15,22 +15,25 @@ I am a passionate high school student from Vietnam, dedicated to mastering the m
 ### 🛠 Tech Stack & Tools
 - **Languages:** Python (Primary), C++, Markdown
 - **Libraries:** NumPy (Learning), Matplotlib
-- **Platforms:** Khan Academy, GitHub, VS Code
+- **Platforms:** GitHub, VS Code, Leetcode, TensorTonic
 
 ---
 
 ### 📊 My GitHub Stats
-![General Stats](https://github-readme-stats.vercel.app)
+![General Stats](./generated-stats/github-readme-stats.svg)
 
 ### 💻 Top Languages
-![Top Langs](https://github-readme-stats.vercel.app)
+![Top Langs](./generated-stats/top-languages.svg)
 
 ### 📈 Activity Graph
-![Activity Graph](https://github-readme-activity-graph.vercel.app)
-
+![Activity Graph](./generated-stats/github-readme-activity-graph.svg)
 
 ---
 
+### 🔗 My Coding Profiles
+
+[![LeetCode](https://shields.io)](https://leetcode.com)
+[![TensorTonic](https://shields.io)](https://tensortonic.com)
 
 
 ### 📫 Connect with me
