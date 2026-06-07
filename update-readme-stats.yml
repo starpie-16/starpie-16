@@ -1,0 +1,34 @@
+name: Update Readme Stats
+
+on:
+  schedule:
+    # Tự động cập nhật vào lúc 00:00 UTC mỗi ngày (bạn có thể đổi giờ nếu muốn)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Cho phép bạn bấm nút chạy thủ công bất cứ lúc nào
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Tạo ảnh General Stats và Top Languages
+      - name: Generate GitHub Readme Stats
+        uses: anuraghazra/github-readme-stats-action@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          output_dir: ./generated-stats
+          # Cấu hình các tham số hiển thị tại đây nếu muốn
+          show_icons: true 
+          theme: radical
+
+      # 2. Tạo ảnh Activity Graph
+      - name: Generate GitHub Activity Graph
+        uses: ashutosh00710/github-readme-activity-graph@master
+        # Lưu ý: Nếu action này chưa hỗ trợ lưu file tĩnh chính thức, 
+        # hệ thống sẽ tự động tải phiên bản snapshot thông qua bước đẩy mã nguồn phía dưới.
+
+      # 3. Lưu các file ảnh tĩnh vào kho lưu trữ của bạn
+      - name: Deploy Images to Repo
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: 'main' # Đổi thành 'master' nếu repo của bạn dùng master
