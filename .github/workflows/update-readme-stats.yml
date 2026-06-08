@@ -1,0 +1,27 @@
+name: Update Readme Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate GitHub Readme Stats
+        uses: anuraghazra/github-readme-stats-action@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          output_dir: ./generated-stats
+          show_icons: true 
+          theme: radical
+
+      - name: Generate GitHub Activity Graph
+        uses: ashutosh00710/github-readme-activity-graph@master
+
+      - name: Deploy Images to Repo
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: 'main'
