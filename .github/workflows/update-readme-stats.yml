@@ -9,19 +9,26 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 1. Tạo ảnh Stats bằng Action chính thức mới nhất
       - name: Generate GitHub Readme Stats
-        uses: anuraghazra/github-readme-stats-action@v2
+        uses: readme-tools/github-readme-stats-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           output_dir: ./generated-stats
           show_icons: true 
           theme: radical
 
+      # 2. Tạo ảnh Activity Graph bằng Action bản ổn định chính thức
       - name: Generate GitHub Activity Graph
-        uses: ashutosh00710/github-readme-activity-graph@master
+        uses: ashutosh00710/github-readme-activity-graph@v1.4.0
 
+      # 3. Đẩy file ảnh đã tạo vào repo bằng công cụ chuẩn của GitHub
       - name: Deploy Images to Repo
-        uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: 'main'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./generated-stats
+          target-folder: generated-stats
+          branch: main
