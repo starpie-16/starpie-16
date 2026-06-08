@@ -21,9 +21,9 @@ jobs:
           show_icons: true 
           theme: radical
 
-      # 2. Tạo ảnh Activity Graph bằng Action bản ổn định chính thức
+      # 2. Sửa lỗi: Gọi từ nhánh @main để tránh lỗi tìm version
       - name: Generate GitHub Activity Graph
-        uses: ashutosh00710/github-readme-activity-graph@v1.4.0
+        uses: ashutosh00710/github-readme-activity-graph@main
 
       # 3. Đẩy file ảnh đã tạo vào repo bằng công cụ chuẩn của GitHub
       - name: Deploy Images to Repo
