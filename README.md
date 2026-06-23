@@ -20,17 +20,15 @@ I am a passionate high school student from Vietnam, dedicated to mastering the m
 ---
 
 ### 📊 My GitHub Stats
-![General Stats](./generated-stats/github-readme-stats.svg)
+![Oliver's GitHub Stats](https://github-readme-stats.vercel.app/api?username=starpie-16&show_icons=true&theme=dark)
 
 ### 💻 Top Languages
-![Top Langs](./generated-stats/top-languages.svg)
+![Oliver's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=starpie-16&layout=compact&theme=dark)
 
 ### 📈 Activity Graph
-![Activity Graph](./generated-stats/github-readme-activity-graph.svg)
-
+[![Oliver's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=starpie-16&theme=react-dark&area=true)](https://github.com/Ashutosh00710/github-readme-activity-graph)
 ---
 
-### 🔗 My Coding Profiles
 
 ### 🔗 My Coding Profiles
 
