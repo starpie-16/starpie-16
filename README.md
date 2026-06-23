@@ -32,8 +32,12 @@ I am a passionate high school student from Vietnam, dedicated to mastering the m
 
 ### 🔗 My Coding Profiles
 
-[![LeetCode](https://shields.io)](https://leetcode.com)
-[![TensorTonic](https://shields.io)](https://tensortonic.com)
+### 🔗 My Coding Profiles
+
+[![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=white)](https://leetcode.com/starpie_au)
+
+
+[![TensorTonic](https://img.shields.io/badge/-TensorTonic-2196F3?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensortonic.com/profile/oliver-16)
 
 
 ### 📫 Connect with me
