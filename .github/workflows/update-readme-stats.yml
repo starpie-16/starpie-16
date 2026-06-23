@@ -21,11 +21,14 @@ jobs:
           show_icons: true 
           theme: radical
 
-      # 2. Sửa lỗi: Gọi từ nhánh @main để tránh lỗi tìm version
+      # 2. Thay thế bằng Action tạo đồ thị hoạt động tương thích 100%
       - name: Generate GitHub Activity Graph
-        uses: ashutosh00710/github-readme-activity-graph@main
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
 
-      # 3. Đẩy file ảnh đã tạo vào repo bằng công cụ chuẩn của GitHub
+      # 3. Gom và đẩy toàn bộ file ảnh tĩnh đã tạo vào thư mục lưu trữ
       - name: Deploy Images to Repo
         uses: JamesIves/github-pages-deploy-action@v4
         with:
